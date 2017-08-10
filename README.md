@@ -7,7 +7,7 @@ You also can specifiy a note, which will appear in a Tooltip, so you won't forge
 you might be a wokraholic and need a reminder to call it a day and go home)
 Because it will not appear in your taskbar, there's a Tray icon, in case you have lost the widget. the tray Icon uspports the same context menu commands as the UI.
 
-
+![preview](https://github.com/al-develop/ClockWidget/blob/master/clockwidget.png)
 
 # For Developers
 If you want to extend the possiblities of this widget (For example, a sound notification would be cool. Or maybe something like multiple timers, for diiferent appointments).
