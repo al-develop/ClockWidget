@@ -14,3 +14,9 @@ If you want to extend the possiblities of this widget (For example, a sound noti
 If you plan to extend the context menu, keep in mind, to extend it on both the UI and the Try Icon. 
 I used the DevExpress.Mvvm Library from NuGet and a fw other Libraries for this Application (you can find a complete list below).
 Moreover, the Applcaiton is pretty small, so there isn't much magic behind it at all. It's prettyx straightforward, just a bucnh of classes and a few lines of code.
+
+Used Libraries:
+- DevExress.Mvvm (NuGet)
+- Hardcodet.Notifyicon (NuGet)
+- icon8 for icons
+- MahApps.Metro (NugGet)
