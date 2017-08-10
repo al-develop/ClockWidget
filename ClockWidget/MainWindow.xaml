@@ -16,11 +16,11 @@
         <ContextMenu>
             <MenuItem Header="Minimieren"
                       Click="contextMinimize_Click" />
-            <MenuItem Header="Wiederherstellen"
+            <MenuItem Header="Restore"
                       Click="contextMaximize_Click" />
-            <MenuItem Header="Beenden"
+            <MenuItem Header="Exit"
                       Click="contextClose_Click" />
-            <MenuItem Header="Einstellungen">
+            <MenuItem Header="Settings">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="40" />
@@ -30,10 +30,10 @@
                         <ColumnDefinition Width="13*" />
                         <ColumnDefinition Width="42*" />
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="Thema:"
+                    <TextBlock Text="Theme:"
                                VerticalAlignment="Center"
                                Grid.Row="0" />
-                    <ComboBox mahapps:TextBoxHelper.Watermark="Thema"
+                    <ComboBox mahapps:TextBoxHelper.Watermark="Theme"
                               ItemsSource="{Binding Themes}"
                               SelectedItem="{Binding SelectedTheme, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
                               HorizontalAlignment="Stretch"
@@ -42,11 +42,11 @@
                               Margin="5,0,5,0"
                               Grid.Column="1"
                               Grid.Row="0" />
-                    <TextBlock Text="Akzent:"
+                    <TextBlock Text="Accent:"
                                VerticalAlignment="Center"
                                Grid.Row="1"
                                Grid.Column="0" />
-                    <ComboBox mahapps:TextBoxHelper.Watermark="Thema"
+                    <ComboBox mahapps:TextBoxHelper.Watermark="Theme"
                               ItemsSource="{Binding Accents}"
                               SelectedItem="{Binding SelectedAccent, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
                               HorizontalAlignment="Stretch"
@@ -68,6 +68,8 @@
                 <TextBox mahapps:TextBoxHelper.Watermark="Note"
                          Text="{Binding Note}" />
             </MenuItem>
+            <MenuItem Header="Info"
+                      Click="Info_Click" />
         </ContextMenu>
     </Window.ContextMenu>
     <Grid ToolTip="{Binding Note}">
@@ -83,13 +85,13 @@
                         Grid.RowSpan="2">
             <tb:TaskbarIcon.ContextMenu>
                 <ContextMenu>
-                    <MenuItem Header="Minimieren"
+                    <MenuItem Header="Minimize"
                               Click="contextMinimize_Click" />
-                    <MenuItem Header="Wiederherstellen"
+                    <MenuItem Header="Restore"
                               Click="contextMaximize_Click" />
-                    <MenuItem Header="Beenden"
+                    <MenuItem Header="Exit"
                               Click="contextClose_Click" />
-                    <MenuItem Header="Einstellungen">
+                    <MenuItem Header="Settings">
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="40" />
@@ -99,10 +101,10 @@
                                 <ColumnDefinition Width="13*" />
                                 <ColumnDefinition Width="42*" />
                             </Grid.ColumnDefinitions>
-                            <TextBlock Text="Thema:"
+                            <TextBlock Text="Theme:"
                                        VerticalAlignment="Center"
                                        Grid.Row="0" />
-                            <ComboBox mahapps:TextBoxHelper.Watermark="Thema"
+                            <ComboBox mahapps:TextBoxHelper.Watermark="Theme"
                                       ItemsSource="{Binding Themes}"
                                       SelectedItem="{Binding SelectedTheme, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
                                       HorizontalAlignment="Stretch"
@@ -111,11 +113,11 @@
                                       Margin="5,0,5,0"
                                       Grid.Column="1"
                                       Grid.Row="0" />
-                            <TextBlock Text="Akzent:"
+                            <TextBlock Text="Accent:"
                                        VerticalAlignment="Center"
                                        Grid.Row="1"
                                        Grid.Column="0" />
-                            <ComboBox mahapps:TextBoxHelper.Watermark="Akzent"
+                            <ComboBox mahapps:TextBoxHelper.Watermark="Accent"
                                       ItemsSource="{Binding Accents}"
                                       SelectedItem="{Binding SelectedAccent, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
                                       HorizontalAlignment="Stretch"
@@ -138,6 +140,8 @@
                                  Text="{Binding Note}" />
                     </MenuItem>
                     <MenuItem Header="{Binding TimeLeft}" />
+                    <MenuItem Header="Info"
+                              Click="Info_Click" />
                 </ContextMenu>
             </tb:TaskbarIcon.ContextMenu>
         </tb:TaskbarIcon>

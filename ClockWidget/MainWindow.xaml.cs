@@ -44,5 +44,12 @@ namespace ClockWidget
             base.OnClosed(e);
             _mainWindowViewModel.SaveSettings();
         }
+
+
+        private void Info_Click(object sender, RoutedEventArgs e)
+        {
+            var info = new InfoWindow();
+            info.Show();
+        }
     }
 }
